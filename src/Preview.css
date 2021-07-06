@@ -1,0 +1,57 @@
+.preview {
+  position: relative;
+}
+.preview__close {
+  position: absolute;
+  top: 0;
+  margin: 5px;
+  font-size: 18px !important;
+  color: white;
+  cursor: pointer;
+}
+.preview__toolbarRight {
+  color: white;
+  position: absolute;
+  margin: 5px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+.preview__toolbarRight > .MuiSvgIcon-root {
+  font-size: 20px !important;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.preview__footer {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: -27px;
+  padding: 7px;
+}
+.preview__footer > h2 {
+  font-size: 10px;
+  margin-right: 3px;
+}
+.preview__sendIcon {
+  font-size: 12px !important;
+}
+
+@media screen and (max-width: 380px) {
+  .preview > img {
+    height: 350px;
+    width: 240px;
+  }
+  .preview {
+    height: 340px;
+    margin-right: 3px !important;
+  }
+}

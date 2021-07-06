@@ -1,0 +1,18 @@
+.webcamCapture {
+  position: relative;
+}
+.webcamCapture__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .webcamCapture__video {
+    height: 340px;
+    margin-right: 3px !important;
+  }
+}

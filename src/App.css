@@ -1,39 +1,40 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  background-color: #fefc01;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.app__logo {
+  object-fit: contain;
+  height: 100px;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.app__body {
+  background: url("https://www.pngkey.com/png/full/859-8598072_picture-freeuse-library-silhouette-mobile-at-getdrawings-cell.png")
+    no-repeat center;
+  height: 400px;
+  background-size: contain;
+  width: 250px;
+  padding: 74px;
+}
+.app__bodyBackground {
+  height: 400px;
+  background-color: white;
+}
+@media screen and (max-width: 400px) {
+  .app__logo {
+    height: 40px;
   }
-  50% {
-    transform: translateY(10px);
+  .app__body {
+    padding: 40px;
+    background-size: contain;
   }
-  100% {
-    transform: translateY(0px);
+  .app__bodyBackground {
+    margin-top: 10px;
+    height: 350px;
+    padding: 2px;
+    width: 240px;
+    margin-left: 3px;
   }
 }

@@ -1,0 +1,19 @@
+.chatView {
+  position: relative;
+}
+.chatView > img {
+  cursor: pointer;
+}
+.chatView__timer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+@media screen and (max-width: 380px) {
+  .chatView > img {
+    height: 350px;
+    width: 240px;
+  }
+}
